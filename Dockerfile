@@ -2,9 +2,9 @@
 # This dockerfile will setup a centos container with OpenJDK installed on it
 ############################################################################
 
-FROM centos
+FROM centos:7
 
-MAINTAINER Loic Mathieu <loicmathieu@free.fr>
+MAINTAINER matthewcmead
 
 RUN yum -y install java-1.8.0-openjdk-devel && rm -rf /var/cache/yum/*
 
